@@ -1,0 +1,20 @@
+source https://api.nuget.org/v3/index.json
+
+nuget FSharp.Core
+nuget SQLProvider
+nuget Npgsql
+nuget Giraffe
+nuget Microsoft.AspNetCore.App
+nuget Fable.Core
+nuget Fable.Promise
+nuget Fable.Fetch
+nuget Fable.Browser.Dom
+
+// [ FAKE GROUP ]
+group Build
+    storage none
+    source https://api.nuget.org/v3/index.json
+
+    nuget Fake.DotNet.Cli
+    nuget Fake.IO.FileSystem
+    nuget Fake.Core.Target
