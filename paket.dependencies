@@ -1,14 +1,24 @@
 source https://api.nuget.org/v3/index.json
 
 nuget FSharp.Core
+nuget logary
 nuget SQLProvider
 nuget Npgsql
 nuget Giraffe
 nuget Microsoft.AspNetCore.App
-nuget Fable.Core
-nuget Fable.Promise
-nuget Fable.Fetch
-nuget Fable.Browser.Dom
+
+group Client
+    storage none
+    source https://api.nuget.org/v3/index.json
+    framework: netstandard2.0
+
+    nuget Fable.Core
+    nuget Fable.Promise
+    nuget Fable.Fetch
+    nuget Fable.Browser.Dom
+    nuget Fable.React
+    nuget Fable.Elmish
+    nuget Fable.Elmish.React
 
 // [ FAKE GROUP ]
 group Build
